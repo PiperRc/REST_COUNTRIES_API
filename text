@@ -1,0 +1,26 @@
+mobile:
+
+-nav :100% of body
+
+-main
+95% of body
+center it
+
+-caledner div
+80% of main
+center it
+
+-calender blocks
+100% of of calender div
+
+desktop:
+nav:same as mobile
+
+main:same as mobile
+
+calender div:
+100% of main
+
+calender blocks: grid
+
+
