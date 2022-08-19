@@ -1,50 +1,77 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 62.5%;
     font-family: 'Nunito Sans', sans-serif;
 }
 
-:root{
+:root {
     /* Dark Blue (Dark Mode Elements */
-    --dblue:hsl(209, 23%, 22%);
+    --dblue: hsl(209, 23%, 22%);
 
     /* Very Dark Blue (Dark Mode Background) */
-    --vdblue:hsl(207, 26%, 17%);
+    --vdblue: hsl(207, 26%, 17%);
 
     /* Very Dark Blue (Light Mode Text) */
-    --vdbluelight:hsl(200, 15%, 8%);
+    --vdbluelight: hsl(200, 15%, 8%);
 
     /* Dark Gray (Light Mode Input) */
-    --dgray:hsl(0, 0%, 52%);
+    --dgray: hsl(0, 0%, 52%);
 
     /* Very Light Gray (Light Mode Background) */
-    --vlightgray:hsl(0, 0%, 98%);
+    --vlightgray: hsl(0, 0%, 98%);
 
     /* White (Dark Mode Text & Light Mode Elements) */
-    --white:hsl(0, 0%, 100%);
+    --white: hsl(0, 0%, 100%);
 }
 
-body{
-    height:100vh;
+body {
+    height: 100vh;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-around;
     justify-content: space-between;
     align-items: center;
-    background-color: lightblue;
-    height: 10%;
+    background-color: var(--white);
+    height: 20%;
 
 }
 
-nav h2 a{
+nav {
+    padding: 0 1rem 0 1rem;
+}
+
+nav h2 a {
     text-decoration: none;
+    color: black;
+    font-weight: 300;
 }
-main{
+
+nav h2 i {
+    background-color: white;
+}
+
+
+main {
     background-color: var(--vlightgray);
+    /* border: 1px solid green; */
+    width: 95%;
+    margin: 0 auto;
 }
+
+.search-bar input {
+    width: 100%;
+    font-size:1.5rem;
+    border-radius: .5rem;
+    font-family: 'Helvetica', FontAwesome, sans-serif;
+    padding: 2rem 0 2rem 0;
+    padding-left: 3rem;
+ 
+}
+
