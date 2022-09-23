@@ -39,10 +39,6 @@ nav {
     align-items: center;
     background-color: var(--white);
     height: 20%;
-
-}
-
-nav {
     padding: 0 1rem 0 1rem;
 }
 
@@ -63,7 +59,7 @@ main {
 
 .container {
     width: 95%;
-    border: 1px solid purple;
+    border: 2px solid purple;
     margin: 0 auto;
 }
 
@@ -138,4 +134,12 @@ main {
 .capital span {
     font-weight: 100;
     padding-left: 1rem;
+}
+
+
+@media screen and (min-width:500px) {
+    .countries{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
 }

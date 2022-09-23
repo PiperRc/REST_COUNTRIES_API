@@ -11,16 +11,18 @@
 </section>
   */}
 
+//   not working:
+// 85,98,189,198
+
+
+makeCards();
+
 async function makeCards() {
     let res = await fetch('https://restcountries.com/v3.1/all');
     let data = await res.json();
     const countries = document.querySelector('.countries');
 
-    for (i = 0; i <= 250; i++) {
-
-
-
-
+    for (i = 0; i <= 249; i++) {
 
         //make section and append to countries div
         const section = document.createElement('section');
@@ -44,7 +46,7 @@ async function makeCards() {
         // country_name
         const countryName = document.createElement('h3');
         countryName.classList.add('country_name');
-        countryName.innerHTML = data[i].name.common;
+        countryName.innerHTML =`${data[i].name.common}` ;
 
         // population
 
@@ -63,9 +65,10 @@ async function makeCards() {
         const regionSpan = document.createElement('span');
         region.append(regionSpan);
         regionSpan.innerHTML = data[i].region;
-
+        
 
         // capital
+        
         const capital = document.createElement('p');
         capital.innerHTML = 'Capital:'
         capital.classList.add('capital');
@@ -73,21 +76,22 @@ async function makeCards() {
         const capitalSpan = document.createElement('span');
         capital.append(capitalSpan);
 
+        if(!('capital' in data[i])){
+            capitalSpan.innerHTML='none'
+        }
+        else{
         capitalSpan.innerHTML = data[i].capital[0];
+        }
 
         // append countryName,population,region and capital to info
         info.append(countryName, population, region, capital);
-        // console.log(data[0]);
-
-
-
+        // console.log(data[0]);  
     }
 
 }
 
 
 
-makeCards();
 
 
 // fetch('https://restcountries.com/v3.1/all')
@@ -96,6 +100,8 @@ makeCards();
 // })
 // .then((data)=>{
 //     console.log(data);
-//     console.log(data[10].flags.png)
+//     // console.log(data[41].name.common)
+   
+//     // console.log(data[10].flags.png);
 // })
 
