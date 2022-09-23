@@ -96,8 +96,15 @@ main {
 
 .countries section {
     border: 1px solid red;
+    background-color: var(--white);
     padding-bottom: 2rem;
     width: 85%;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+}
+
+.countries section:hover{
+    transform: scale(1.1);
 }
 
 /* for flag */
@@ -110,9 +117,7 @@ main {
     width: 100%;
 }
 
-.country_name {
-    font-size: 2.5rem;
-}
+
 
 .population,
 .region,
@@ -136,8 +141,33 @@ main {
     padding-left: 1rem;
 }
 
+.country_name {
+    font-size: 2.5rem;
+    padding-bottom: 2.5rem;
+}
 
-@media screen and (min-width:500px) {
+@media screen and (min-width:768px) {
+
+    nav{
+    padding:0 3.5rem 0 3.5rem;
+    }
+
+    nav h1{
+        font-size: 3rem;
+    }
+    .search{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .filter_region_container{
+        padding-top: 0;
+        text-align: right;
+    }
+
+    .search_bar input{
+        width: 50%;
+    }
     .countries{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }

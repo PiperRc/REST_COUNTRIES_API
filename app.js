@@ -1,15 +1,14 @@
-{/* <section class="usa">
-<img src="" alt="" class="flag">
+//  <section>
+// <img src="" alt="" class="flag">
 
-<div class="info">
-    <h2 class="country_name"></h2>
-    <p class="population">Population:<span></span> </p>
-    <p class="region"> Region: <span></span></p>
-    <p class="capital">Capital:<span></span></p>
-</div>
+// <div class="info">
+//     <h3 class="country_name"></h3>
+//     <p class="population">Population:<span></span> </p>
+//     <p class="region"> Region: <span></span></p>
+//     <p class="capital">Capital:<span></span></p>
+// </div>
 
-</section>
-  */}
+// </section> 
 
 //   not working:
 // 85,98,189,198
